@@ -1,5 +1,43 @@
-.App {
+.App {}
+
+.todo1 {
+  position: relative;
   text-align: center;
+  display: block;
+  width: 50%;
+  margin: 100px auto 0px;
+  top: 100px;
+}
+
+.todo2 {
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 50%;
+  margin: 100px auto 0px;
+  top: 10px;
+}
+
+@media screen and (max-width:650px) {
+  .todo1{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 100px auto 0px;
+    top: 100px;
+  }
+  .todo2{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 100px auto 0px;
+    top: 10px;
+  }
+  .add{
+    margin-top: 5px;
+  }
 }
 
 .App-logo {
@@ -32,7 +70,42 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 6px 5px;
+  margin: 0;
+}
+
+.add {
+  width: 100%;
+}
+.btn-danger {
+  width: 100%;
+}
+
+.footer {
+  padding: 10px 0px;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  bottom: 0px;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+}
+
+.navbar {
+  z-index: 1000;
+  width: 100%;
+  /* background: #252525; */
+  color: white;
+  top: 0px;
+  left: 0px;
+  position: fixed;
 }
